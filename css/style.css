@@ -605,4 +605,7 @@ body {
   .services::after {
     display: none;
   }
+  .resume-stuff{
+    flex-direction: column;
+  }
 }
