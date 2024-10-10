@@ -6,6 +6,9 @@
     <title>Kenny</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="/css/all.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap");
+    </style>
   </head>
   <body>
     <div class="container flex">
@@ -22,33 +25,33 @@
           </div>
         </div>
 
-        <ul class="flex">
+        <ul class="flex nav-links">
           <li>
-            <a href="#" class="flex">
+            <a href="#" class="flex nav-link active" data-link="1">
               <span class="far fa-user nav-item-icon"></span>
               <span class="nav-item-text">ABOUT</span>
             </a>
           </li>
           <li>
-            <a href="#" class="flex active">
+            <a href="#" class="flex nav-link" data-link="2">
               <span class="far fa-list-alt nav-item-icon"></span>
               <span class="nav-item-text">RESUME</span>
             </a>
           </li>
           <li>
-            <a href="#" class="flex">
+            <a href="#" class="flex nav-link" data-link="3">
               <span class="far fas fa-eye nav-item-icon"></span>
               <span class="nav-item-text">WORKS</span>
             </a>
           </li>
           <li>
-            <a href="#" class="flex">
+            <a href="#" class="flex nav-link" data-link="4">
               <span class="far fa-paper-plane nav-item-icon"></span>
               <span class="nav-item-text">CONTACT</span>
             </a>
           </li>
           <li>
-            <a href="#" class="flex">
+            <a href="#" class="flex nav-link" data-link="5">
               <span class="far fa-user nav-item-icon"></span>
               <span class="nav-item-text">ABOUT</span>
             </a>
@@ -84,7 +87,7 @@
         </div>
       </section>
       <aside class="slider">
-        <section class="about hidden" data-page="1">
+        <section class="about slider-content content-1 active" id="about">
           <div class="slider-title">
             <p><b>About Me</b></p>
           </div>
@@ -166,7 +169,7 @@
             </div>
           </section>
         </section>
-        <section class="resume">
+        <section class="resume slider-content content-2" id="resume">
           <div class="slider-title">
             <p><b>Resume</b></p>
           </div>
@@ -243,13 +246,28 @@
                   <p>CODING</p>
                 </div>
                 <ul class="coding-skills flex">
-                  <li class="coding-skill">wordpress</li>
+                  <li class="coding-skill">
+                    <div>
+                      <div class="progress"></div>
+                      <p class="code-skill"></p>
+                    </div>
+                  </li>
                 </ul>
+              </div>
+              <div class="knowledge">
+                <div class="resume-heading flex">
+                  <div class="icon-ring">
+                    <span class="icon fas fa-list"></span>
+                  </div>
+                  <p>knowledge</p>
+                </div>
               </div>
             </div>
           </section>
         </section>
       </aside>
     </div>
+    <script defer src="./css/all.js"></script>
+    <script defer src="script.js"></script>
   </body>
 </html>
