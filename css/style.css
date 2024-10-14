@@ -3,6 +3,7 @@
   box-sizing: border-box;
   padding: 0;
   font-family: "Lekton", monospace;
+  font-style: normal;
   overflow: hidden; /* Changed from 'none' to 'hidden' */
   /* border: 1px solid black; */
   /* border: 1px solid black; */
@@ -22,6 +23,33 @@ body {
   color: rgba(255, 255, 255, 0.55);
   background: #26262d;
 }
+/* .canvas {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2000;
+}
+.lines{
+  opacity: 0.05;
+}
+.lights{
+  opacity: 1;
+}
+.light,.line{
+  fill: #f6b846 !important;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  
+}
+.canvas-cyberlines {
+  background-color: #161616 !important;
+  display: flex;
+  justify-content: center;
+  background: #222;
+} */
 .container {
   justify-content: center;
   height: 100vh;
@@ -191,12 +219,12 @@ body {
   /* height: 20%;  */
 }
 .profile-text h1 {
-  padding: 20px 0 0 0;
+  padding: 20px 0 0 5px;
   font-size: 34px;
 }
 .profile-text .skill {
-  padding: 25px 0;
-  font-size: 12px;
+  padding: 5px 0;
+  font-size: 16px;
   color: #f6b846;
 }
 .profile-buttons {
@@ -255,13 +283,15 @@ body {
   /* padding: 30px; */
   background-color: #222;
   overflow-y: auto;
+  z-index: 1;
   /* border: 1px solid black; */
 }
 .slider .slider-content {
   display: none;
   margin-top: 2rem;
   opacity: 0;
-  transition: all 0.5s ease-in-out}
+  transition: all 0.5s ease-in-out;
+}
 .slider .slider-content.active {
   display: block;
   margin-top: 0;
@@ -293,13 +323,21 @@ body {
   padding: 30px 30px;
 }
 .facts {
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* gap: 150px; */
-  flex-wrap: wrap;
-}
-.slider .facts p.flex {
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
   flex-direction: column;
+  /* padding: 20px; */
 }
+
+.facts div.flex{
+  justify-content: space-between;
+}
+.facts div.flex span{
+  color: #ffffffe6;
+}
+
 .services {
   position: relative;
 }
@@ -538,7 +576,7 @@ body {
     top: 0;
   }
   .navbar a {
-    padding: 10px  20px;
+    padding: 10px 20px;
     width: fit-content;
   }
   .navbar a::after {
@@ -605,7 +643,7 @@ body {
   .services::after {
     display: none;
   }
-  .resume-stuff{
+  .resume-stuff {
     flex-direction: column;
   }
 }
