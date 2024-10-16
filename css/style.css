@@ -358,6 +358,7 @@ body {
 }
 .slider .about-me {
   padding: 30px 30px;
+  line-height: 1.7;
 }
 .facts {
   /* justify-content: space-between; */
