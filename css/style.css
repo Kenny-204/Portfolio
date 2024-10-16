@@ -27,6 +27,9 @@ html {
 .flex {
   display: flex;
 }
+p{
+  line-height: 1.7;
+}
 .hidden {
   display: none;
 }
