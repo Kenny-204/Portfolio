@@ -23,6 +23,10 @@ body {
   color: rgba(255, 255, 255, 0.55);
   background: #26262d;
 }
+.typing{
+  white-space:nowrap ;
+  overflow: hidden;
+}
 /* .canvas {
   position: fixed;
   overflow: hidden;
@@ -64,7 +68,7 @@ body {
   /* flex-direction: column; */
   justify-content: last baseline;
   width: 6%;
-  height: 478px;
+  height: 350px;
   padding: 5px 0 5px 0;
   position: sticky;
   border-radius: 5px;
@@ -88,6 +92,7 @@ body {
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   position: relative;
+  transition: color 0.3s ease-in-out;
 }
 .navbar a::after {
   background: radial-gradient(
@@ -103,6 +108,9 @@ body {
   height: 1px;
 }
 
+.navbar a:hover {
+  color: #f6b846;
+}
 .navbar a.active {
   color: #f6b846;
 }
@@ -297,6 +305,22 @@ body {
   margin-top: 0;
   opacity: 1;
 }
+.slider .slider-title::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 10px;
+  background: linear-gradient(
+    135deg,
+    rgba(246, 184, 70, 0.4) 0%,
+    rgba(246, 184, 70, 0.01) 100%
+  );
+}
 .slider .slider-title {
   font-size: 20px;
   padding: 25px 30px;
@@ -331,10 +355,11 @@ body {
   /* padding: 20px; */
 }
 
-.facts div.flex{
+.facts div.flex {
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-.facts div.flex span{
+.facts div.flex span {
   color: #ffffffe6;
 }
 
@@ -471,6 +496,20 @@ body {
   background-color: #666666;
 }
 
+.resume-stuff-item.first::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  height: 80%;
+  width: 1px;
+  /* background: radial-gradient(
+    ellipse at top,
+    rgba(197, 202, 213, 0.15) 0%,
+    rgba(255, 255, 255, 0) 70%
+  ); */
+  background: rgba(197, 202, 213, 0.15);
+}
 .resume-stuff-item::before {
   content: "";
   position: absolute;
@@ -502,7 +541,55 @@ body {
 .knowledge {
   width: 50%;
 }
+.get-touch {
+  padding: 20px;
+}
+.contact-form {
+  padding: 30px;
+}
+.contact-form input,
+.contact-form textarea {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #eee;
+  font-family: "Poppins";
+  font-size: 16px;
+  /* color: #ffffffd9; */
+  transition: all 0.1s ease-in;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 0;
+  border-bottom: 2px #f6b846 solid;
+  color: #f6b846;
+}
+.name-email {
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: 13px;
+}
+.name-email input {
+  width: 48.2%;
+  height: 50px;
+}
+.form-message {
+  width: 100%;
+  height: 120px;
+  margin: 30px 0;
+}
+.form-submit {
+  font-size: 14px;
+  color: #ffffffe6;
+  font-weight: bold;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
 
+.form-submit:hover {
+  color: #f6b846;
+}
 @media all and (max-width: 1125px) {
   * {
     overflow-y: auto;
@@ -543,13 +630,16 @@ body {
   } */
   .navbar ul {
     flex-direction: row;
-    /* flex-grow: 1; */
+    /* display: flex; */
+
     /* overflow-x: auto; */
     width: 100%;
     position: relative;
     overflow-x: auto;
   }
-
+  .navbar ul li {
+    flex-grow: 1;
+  }
   .navbar ul::before {
     content: "";
     position: absolute;
@@ -577,7 +667,7 @@ body {
   }
   .navbar a {
     padding: 10px 20px;
-    width: fit-content;
+    /* width: fit-content; */
   }
   .navbar a::after {
     background: radial-gradient(
@@ -645,5 +735,8 @@ body {
   }
   .resume-stuff {
     flex-direction: column;
+  }
+  .name-email input {
+    width: 100%;
   }
 }

@@ -25,3 +25,17 @@ const pageNav = function () {
   });
 };
 pageNav();
+const text = "Front-end Developer";
+const speed = 150;
+let index = 0;
+const typingAreas = document.querySelectorAll(".typing");
+const typingEffect = function () {
+  if (index < text.length) {
+    typingAreas.forEach((typingArea) => {
+      typingArea.innerHTML += text[index]
+    });
+    index++
+    setTimeout(typingEffect,speed)
+  }
+};
+typingEffect();
