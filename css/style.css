@@ -237,6 +237,7 @@ body {
 }
 .profile-buttons {
   width: 100%;
+  cursor: pointer;
   position: relative;
 }
 .profile-buttons::before {
