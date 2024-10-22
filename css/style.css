@@ -395,6 +395,7 @@ body {
   height: 60px;
   font-size: 32px;
   border-radius: 100%;
+  margin-bottom: 5px;
   color: #f6b846;
   border: #f6b846 1px solid;
 }
@@ -442,8 +443,7 @@ body {
   padding: 0 20px;
   /* justify-content: space-between; */
 }
-.experience,
-.education {
+.experience {
   width: 50%;
 }
 .resume-heading {
@@ -823,5 +823,8 @@ body {
   }
   .slider .about-me {
     padding: 20px;
+  }
+  .experience {
+    width: 100%;
   }
 }

@@ -25,7 +25,7 @@ const pageNav = function () {
   });
 };
 pageNav();
-const text = "Front-end Developer";
+const text = "Full Stack Developer";
 const speed = 150;
 let index = 0;
 const typingAreas = document.querySelectorAll(".typing");
