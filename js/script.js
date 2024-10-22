@@ -32,10 +32,10 @@ const typingAreas = document.querySelectorAll(".typing");
 const typingEffect = function () {
   if (index < text.length) {
     typingAreas.forEach((typingArea) => {
-      typingArea.innerHTML += text[index]
+      typingArea.innerHTML += text[index];
     });
-    index++
-    setTimeout(typingEffect,speed)
+    index++;
+    setTimeout(typingEffect, speed);
   }
 };
 typingEffect();
