@@ -8,6 +8,22 @@
   /* border: 1px solid black; */
   /* border: 1px solid black; */
 }
+/*  */
+
+svg:not(:host).svg-inline--fa,
+svg:not(:root).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+/*  */
+
 ::-webkit-scrollbar {
   width: 6px;
   background-color: transparent;
@@ -90,6 +106,7 @@ body {
 .navbar ul {
   flex-direction: column;
 }
+
 .navbar ul li {
   list-style: none;
 }
@@ -298,6 +315,10 @@ body {
 .icons {
   gap: 10px;
   place-content: center;
+}
+.icons svg{ 
+  width: 14px;
+  height: 16px;
 }
 /* profile card ends */
 .slider {
@@ -571,16 +592,15 @@ body {
   /* flex-direction: column; */
   position: relative;
 }
-.work{
-  
+.work {
   position: relative;
   padding: 20px 25px;
   transition: all 0.5s ease-in-out;
 }
-.work:hover{
+.work:hover {
   color: #f6b846;
 }
-.work::after{
+.work::after {
   content: "";
   background: radial-gradient(
     ellipse at left,
@@ -590,30 +610,28 @@ body {
 
   position: absolute;
   bottom: 0;
-  left: 10px ;
+  left: 10px;
   margin: auto;
   width: 100%;
-  height: 1px ;
+  height: 1px;
 }
 .works-list::after {
-  
-    content: "";
-    background: radial-gradient(
-      ellipse at top,
-      rgba(197, 202, 213, 0.15) 0%,
-      rgba(255, 255, 255, 0) 70%
-    );
+  content: "";
+  background: radial-gradient(
+    ellipse at top,
+    rgba(197, 202, 213, 0.15) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
 
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin: auto;
-    width: 1px;
-    height: 100%;
-  }
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 1px;
+  height: 100%;
+}
 
 .works-list a {
-
   text-decoration: none;
   color: rgba(255, 255, 255, 0.9);
 }
