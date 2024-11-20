@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "script.js",
   "scripts": {
-    "minify-css": "cleancss -o css/style.min.css css/style.css && cleancss -o css/all.min.css css/all.css",
-    "minify-js": "terser js/script.js -o js/script.min.js && terser js/all.js -o js/all.min.js",
+    "minify-css": "cleancss -o css/style.min.css css/style.css",
+    "minify-js": "terser js/script.js -o js/script.min.js",
     "build": "npm run minify-css && npm run minify-js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
