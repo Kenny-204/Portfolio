@@ -316,7 +316,7 @@ body {
   gap: 10px;
   place-content: center;
 }
-.icons svg{ 
+.icons svg {
   width: 14px;
   height: 16px;
 }
@@ -591,6 +591,7 @@ body {
 .works-list {
   /* flex-direction: column; */
   position: relative;
+  flex-wrap: wrap;
 }
 .work {
   position: relative;
@@ -631,6 +632,10 @@ body {
   height: 100%;
 }
 
+.works-list .left,
+.works-list .right {
+  width: 50%;
+}
 .works-list a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.9);
@@ -844,5 +849,20 @@ body {
   }
   .experience {
     width: 100%;
+  }
+  .works-list .left,
+  .works-list .right,
+  .works-list img {
+    width: 100%;
+    
+  }
+  .works-list img {
+    height: 300px;
+  }
+  .works-list {
+    flex-direction: column;
+  }
+  .works-list::after{
+    display: none;
   }
 }
