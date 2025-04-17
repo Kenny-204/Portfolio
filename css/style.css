@@ -807,13 +807,12 @@ body {
     width: 100%;
   }
   .works-list .left,
-  .works-list .right,
-  .works-list img {
+  .works-list .right {
     width: 100%;
   }
-  .works-list img {
+  /* .works-list img {
     height: 300px;
-  }
+  } */
   .works-list {
     flex-direction: column;
   }
