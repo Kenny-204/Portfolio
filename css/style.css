@@ -569,6 +569,10 @@ body {
   position: relative;
   padding: 20px 25px;
   transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+.work img{
+  max-width: 100%;
 }
 .work:hover {
   color: #f6b846;
