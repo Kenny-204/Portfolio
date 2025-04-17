@@ -1,4 +1,5 @@
 const linkParent = document.querySelector(".nav-links");
+const contactBtn = document.querySelector(".button-contact");
 const slider = document.querySelectorAll(".slider-content");
 const pageNav = function () {
   linkParent.addEventListener("click", function (e) {
@@ -16,6 +17,18 @@ const pageNav = function () {
     closest.classList.add("active");
     // get the target content
     targetContent = document.querySelector(`.content-${currentLink}`);
+    // make the target content visible
+    targetContent.style.display = "block";
+    // delay the active class so the animation works
+    setTimeout(() => {
+      targetContent?.classList.add("active");
+    }, 100);
+  });
+  contactBtn.addEventListener("click", function (e) {
+    slider.forEach((el) => (el.style.display = "none"));
+    slider.forEach((el) => el.classList.remove("active"));
+    targetContent = document.querySelector(`.content-4`);
+    console.log(targetContent);
     // make the target content visible
     targetContent.style.display = "block";
     // delay the active class so the animation works
