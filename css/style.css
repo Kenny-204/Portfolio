@@ -280,6 +280,10 @@ body {
   background-color: #222;
   color: rgba(255, 255, 255, 0.85);
   border: none;
+  transition: all 0.1s;
+}
+.profile-buttons a:hover {
+color: #f6b846;
 }
 .profile-buttons .l {
   position: relative;
