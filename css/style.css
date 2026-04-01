@@ -630,6 +630,27 @@ color: #f6b846;
   right: 0;
   margin: auto;
 }
+.work-desc {
+  font-size: 13px;
+  opacity: 0.6;
+  line-height: 1.6;
+  margin-top: 5px;
+}
+.work-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+  padding-bottom: 4px;
+}
+.work-tags span {
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  background: rgba(246, 184, 70, 0.08);
+  border: 1px solid rgba(246, 184, 70, 0.2);
+  color: rgba(255, 255, 255, 0.7);
+}
 
 .contact-form {
   padding: 30px;

@@ -10,19 +10,36 @@
       content="g-ofrW6M10ZWAhlgbetU-zxRd8f7yf00fQw8BGalREo"
     />
 
-    <meta
-      name="description"
-      content="Kehinde Giwa's portfolio - Full-Stack developer specializes in building modern, responsive user interfaces and
-    robust backend solutions"
-    />
+    <title>Kehinde Giwa — Full-Stack Developer</title>
+    <meta name="description" content="Kehinde Giwa is a full-stack developer from Lagos specializing in modern, responsive UIs and scalable backend solutions." />
     <meta name="author" content="Kehinde Giwa" />
-    <meta
-      name="keywords"
-      content="Kehinde Giwa, portfolio, fullstack developer, frontend developer, web developer,Kehinde,Giwa"
-    />
+    <meta name="keywords" content="Kehinde Giwa, portfolio, fullstack developer, frontend developer, web developer, Lagos, Nigeria" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://kennyg.vercel.app/" />
 
-    <title>Kenny - Full-Stack developer</title>
-    <link rel="stylesheet" href="./css/style.min.css" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kennyg.vercel.app/" />
+    <meta property="og:title" content="Kehinde Giwa — Full-Stack Developer" />
+    <meta property="og:description" content="Kehinde Giwa is a full-stack developer from Lagos specializing in modern, responsive UIs and scalable backend solutions." />
+    <!-- <meta property="og:image" content="https://kennyg.vercel.app/img/og-image.png" /> -->
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kehinde Giwa — Full-Stack Developer" />
+    <meta name="twitter:description" content="Kehinde Giwa is a full-stack developer from Lagos specializing in modern, responsive UIs and scalable backend solutions." />
+    <!-- <meta name="twitter:image" content="https://kennyg.vercel.app/img/og-image.png" /> -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FKLR3EKGHR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FKLR3EKGHR');
+    </script>
+
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,15 +47,6 @@
       rel="stylesheet"
     />
   </head>
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FKLR3EKGHR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FKLR3EKGHR');
-</script>
 
   <body>
     <div class="container flex">
@@ -586,11 +594,15 @@
               >
                 <div class="work">
                   <img src="img/catalyst.webp" alt="Catalyst" srcset="" />
-
-                  <p><b>Catalyst </b></p>
-                  <p>
-                    Technology used: React-typescript, firebase,GeminiAI
-                  </p>
+                  <p><b>Catalyst</b></p>
+                  <p class="work-desc">An AI-powered career advisory platform for people breaking into tech, featuring voice and chat guidance powered by Gemini AI and Vapi AI.</p>
+                  <div class="work-tags">
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>Firebase</span>
+                    <span>Gemini AI</span>
+                    <span>Vapi AI</span>
+                  </div>
                 </div>
               </a>
               <a
@@ -600,12 +612,15 @@
               >
                 <div class="work">
                   <img src="img/streampot.webp" alt="Streampot" srcset="" />
-
-                  <p><b>Streampot </b>(<i>in progress</i>)</p>
-                  <p>
-                    Technology used: React-typescript, node.js,
-                    express.js,postgresql
-                  </p>
+                  <p><b>Streampot</b></p>
+                  <p class="work-desc">A full-stack movie streaming site where users can browse and watch movies, save titles to personal watchlists, and manage their accounts with full authentication.</p>
+                  <div class="work-tags">
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>Node.js</span>
+                    <span>Express.js</span>
+                    <span>PostgreSQL</span>
+                  </div>
                 </div>
               </a>
               <a
@@ -616,7 +631,10 @@
                 <div class="work">
                   <img src="img/taki.webp" alt="Taki Learn" srcset="" />
                   <p><b>Taki Learn</b></p>
-                  <p>Technology used: React.js</p>
+                  <p class="work-desc">An interactive learning platform built to make studying more structured and engaging for students.</p>
+                  <div class="work-tags">
+                    <span>React.js</span>
+                  </div>
                 </div>
               </a>
             </div>
@@ -627,8 +645,11 @@
                 rel="noopener noreferrer"
                 ><div class="work">
                   <img src="img/weatherApp.webp" alt="Weather App" srcset="" />
-                  <p><b>Weather App</b>(<i>in progress</i>)</p>
-                  <p>Technology used: React.js</p>
+                  <p><b>Weather App</b> <i>(in progress)</i></p>
+                  <p class="work-desc">A real-time weather app that displays current conditions and forecasts based on the user's location.</p>
+                  <div class="work-tags">
+                    <span>React.js</span>
+                  </div>
                 </div>
               </a>
 
@@ -640,7 +661,12 @@
                 <div class="work">
                   <img src="img/travling.webp" alt="travling" srcset="" />
                   <p><b>Travling</b></p>
-                  <p>Technology used: Html,Css,javascript</p>
+                  <p class="work-desc">A responsive travel-themed landing page showcasing destinations and experiences with a clean layout.</p>
+                  <div class="work-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                  </div>
                 </div>
               </a>
             </div>
@@ -697,6 +723,6 @@
       </main>
     </div>
 
-    <script defer src="js/script.min.js"></script>
+    <script defer src="js/script.js"></script>
   </body>
 </html>
