@@ -24,7 +24,7 @@ const pageNav = function () {
       targetContent?.classList.add("active");
     }, 100);
   });
-  contactBtn.addEventListener("click", function (e) {
+  contactBtn.addEventListener("click", function () {
     slider.forEach((el) => (el.style.display = "none"));
     slider.forEach((el) => el.classList.remove("active"));
     targetContent = document.querySelector(`.content-4`);

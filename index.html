@@ -817,30 +817,32 @@
           <div class="slider-title">
             <p><b>Contact Form</b></p>
           </div>
-          <form action="" class="contact-form">
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <input type="hidden" name="access_key" value="51a9f34c-5adf-4f58-b0c1-9825a6787105" />
+            <input type="hidden" name="subject" value="New message from portfolio" />
             <div class="name-email flex">
               <input
                 type="text"
                 placeholder="Full Name"
-                name="Full Name"
+                name="name"
                 autocomplete="name"
-                id=""
+                required
               />
               <input
                 type="email"
                 placeholder="Email Address"
                 name="email"
-                id=""
                 autocomplete="email"
+                required
               />
             </div>
             <textarea
-              name="Message"
-              id=""
+              name="message"
               class="form-message"
               placeholder="Message"
+              required
             ></textarea>
-            <button class="form-submit" type="button">
+            <button class="form-submit" type="submit">
               SEND MESSAGE
               <svg
                 class="svg-inline--fa fa-right-long"
