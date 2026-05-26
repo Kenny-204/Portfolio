@@ -662,7 +662,7 @@ color: #f6b846;
   border-bottom: 1px solid #eee;
   font-family: "Poppins";
   font-size: 16px;
-  /* color: #ffffffd9; */
+  color: #ffffffd9;
   transition: all 0.1s ease-in;
 }
 .contact-form input:focus,
